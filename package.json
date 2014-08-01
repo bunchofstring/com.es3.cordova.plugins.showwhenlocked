@@ -1,0 +1,16 @@
+{
+    "version": "0.0.1",
+    "name": "com.es3.cordova.plugins.showwhenlocked",
+    "cordova_name": "ShowWhenLocked",
+    "description": "Show When Locked",
+    "license": "MIT",
+    "platforms": [
+        "android"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

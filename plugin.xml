@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		id="com.es3.cordova.plugins.showwhenlocked" version="0.0.1">
+	<name>Show When Locked</name>
+	<description>Plugin to keep app outside of the user's Android lock screen.</description>
+	<license>MIT</license>
+	<keywords>cordova,android,layoutparams</keywords>
+	<engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+	<js-module src="www/showwhenlocked.js" name="device">
+		<clobbers target="cordova.plugins.showwhenlocked" />
+	</js-module>
+	<platform name="android">
+        <source-file src="src/android/com/es3/cordova/plugins/showwhenlocked/ShowWhenLocked.java" target-dir="src/com/es3/cordova/plugins/showwhenlocked/" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ShowWhenLocked">
+                <param name="android-package" value="com.es3.cordova.plugins.showwhenlocked.ShowWhenLocked" />
+            </feature>
+        </config-file>
+    </platform>
+</plugin>
